@@ -80,3 +80,4 @@ def start_server(host='127.0.0.1', port=12345):
         client_socket, client_address = server_socket.accept()
         print(f"Подключение от {client_address}")
         handle_client(client_socket)
+```

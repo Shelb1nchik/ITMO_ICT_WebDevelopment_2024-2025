@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>LeetCode: Задачи - Лабораторная работа 1 - Документация по программированию с сокетами</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Лабораторная работа 1 - Документация по программированию с сокетами</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link">Главная</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Лабораторная работа 1</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Lr1/task1/" class="dropdown-item">Задание 1: Клиент-серверное взаимодействие с использованием UDP</a>
+</li>
+                                    
+<li>
+    <a href="../../Lr1/task2/" class="dropdown-item">Задание 2: Математические операции через TCP</a>
+</li>
+                                    
+<li>
+    <a href="../../Lr1/task3/" class="dropdown-item">Задание 3: HTTP-сервер, возвращающий HTML-страницу</a>
+</li>
+                                    
+<li>
+    <a href="../../Lr1/task4/" class="dropdown-item">Задание 4: Многопользовательский чат на сокетах</a>
+</li>
+                                    
+<li>
+    <a href="../../Lr1/task5/" class="dropdown-item">Задание 5: Веб-сервер для обработки GET и POST запросов</a>
+</li>
+                                    
+<li>
+    <a href="../../Lr1/leetcode/" class="dropdown-item">LeetCode: Задачи</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Лабораторная работа 2</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../task1_2/" class="dropdown-item">Задание</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">LeetCode: Задачи</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../task1_2/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" class="nav-link disabled">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#503-next-greater-element-ii" class="nav-link">Задача 503. Next Greater Element II</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#_1" class="nav-link">Условие:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_2" class="nav-link">Код:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_3" class="nav-link"></a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#498-diagonal-traverse" class="nav-link">Задача 498. Diagonal Traverse</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#_4" class="nav-link">Условие:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_5" class="nav-link">Код:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_6" class="nav-link"></a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#722-remove-comments" class="nav-link">Задача 722. Remove Comments</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#_7" class="nav-link">Условие:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_8" class="nav-link">Код:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_9" class="nav-link"></a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#491-non-decreasing-subsequences" class="nav-link">Задача 491. Non-decreasing Subsequences</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#_10" class="nav-link">Условие:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_11" class="nav-link">Код:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_12" class="nav-link"></a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#720-longest-word-in-dictionary" class="nav-link">Задача 720. Longest Word in Dictionary</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#_13" class="nav-link">Условие:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_14" class="nav-link">Код:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_15" class="nav-link"></a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#718-maximum-length-of-repeated-subarray" class="nav-link">Задача 718. Maximum Length of Repeated Subarray</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#_16" class="nav-link">Условие:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_17" class="nav-link">Код:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_18" class="nav-link"></a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#771-jewels-and-stones" class="nav-link">Задача 771. Jewels and Stones</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#_19" class="nav-link">Условие:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_20" class="nav-link">Код:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_21" class="nav-link"></a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#714-best-time-to-buy-and-sell-stock-with-transaction-fee" class="nav-link">Задача 714. Best Time to Buy and Sell Stock with Transaction Fee</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#_22" class="nav-link">Условие:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_23" class="nav-link">Код:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_24" class="nav-link"></a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#713-subarray-product-less-than-k" class="nav-link">Задача 713. Subarray Product Less Than K</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#_25" class="nav-link">Условие:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_26" class="nav-link">Код:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_27" class="nav-link"></a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#443-string-compression" class="nav-link">Задача 443. String Compression</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#_28" class="nav-link">Условие:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_29" class="nav-link">Код:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_30" class="nav-link"></a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#438-find-all-anagrams-in-a-string" class="nav-link">Задача 438. Find All Anagrams in a String</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#_31" class="nav-link">Условие:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_32" class="nav-link">Код:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_33" class="nav-link"></a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#436-find-right-interval" class="nav-link">Задача 436. Find Right Interval</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#_34" class="nav-link">Условие:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_35" class="nav-link">Код:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_36" class="nav-link"></a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="503-next-greater-element-ii">Задача 503. Next Greater Element II</h1>
+<h2 id="_1">Условие:</h2>
+<pre><code>Given a circular integer array nums (i.e., the next element of nums[nums.length - 1] is nums[0]), return the next greater number for every element in nums.
+
+The next greater number of a number x is the first greater number to its traversing-order next in the array, which means you could search circularly to find its next greater number. If it doesn't exist, return -1 for this number.
+
+
+
+Example 1:
+
+Input: nums = [1,2,1]
+Output: [2,-1,2]
+Explanation: The first 1's next greater number is 2; 
+The number 2 can't find next greater number. 
+The second 1's next greater number needs to search circularly, which is also 2.
+Example 2:
+
+Input: nums = [1,2,3,4,3]
+Output: [2,3,4,-1,4]
+
+
+Constraints:
+
+1 &lt;= nums.length &lt;= 104
+-109 &lt;= nums[i] &lt;= 109
+</code></pre>
+<h2 id="_2">Код:</h2>
+<pre><code class="language-python">class Solution:
+    def nextGreaterElements(self, nums):
+        n = len(nums)
+        res = [-1] * n
+
+        for i in range(n):
+            for j in range(1, n):
+                if nums[(i + j) % n] &gt; nums[i]:
+                    res[i] = nums[(i + j) % n]
+                    break
+
+        return res
+</code></pre>
+<h2 id="_3"><img alt="503" src="../images/503.jpg" /></h2>
+<h1 id="498-diagonal-traverse">Задача 498. Diagonal Traverse</h1>
+<h2 id="_4">Условие:</h2>
+<pre><code>Given an m x n matrix mat, return an array of all the elements of the array in a diagonal order.
+
+
+
+Example 1:
+
+
+Input: mat = [[1,2,3],[4,5,6],[7,8,9]]
+Output: [1,2,4,7,5,3,6,8,9]
+Example 2:
+
+Input: mat = [[1,2],[3,4]]
+Output: [1,2,3,4]
+
+
+Constraints:
+
+m == mat.length
+n == mat[i].length
+1 &lt;= m, n &lt;= 104
+1 &lt;= m * n &lt;= 104
+-105 &lt;= mat[i][j] &lt;= 105
+</code></pre>
+<h2 id="_5">Код:</h2>
+<pre><code class="language-python">class Solution:
+    def findDiagonalOrder(self, mat):
+        if not mat or not mat[0]:
+            return []
+
+        N, M = len(mat), len(mat[0])
+        result = []
+
+        for d in range(N + M - 1):
+            intermediate = []
+            r = 0 if d &lt; M else d - M + 1
+            c = d if d &lt; M else M - 1
+
+            while r &lt; N and c &gt; -1:
+                intermediate.append(mat[r][c])
+                r += 1
+                c -= 1
+
+            if d % 2 == 0:
+                result.extend(intermediate[::-1])
+            else:
+                result.extend(intermediate)
+
+        return result
+</code></pre>
+<h2 id="_6"><img alt="498" src="../images/498.jpg" /></h2>
+<h1 id="722-remove-comments">Задача 722. Remove Comments</h1>
+<h2 id="_7">Условие:</h2>
+<pre><code>Given a C++ program, remove comments from it. The program source is an array of strings source where source[i] is the ith line of the source code. This represents the result of splitting the original source code string by the newline character '\n'.
+
+In C++, there are two types of comments, line comments, and block comments.
+
+The string &quot;//&quot; denotes a line comment, which represents that it and the rest of the characters to the right of it in the same line should be ignored.
+The string &quot;/*&quot; denotes a block comment, which represents that all characters until the next (non-overlapping) occurrence of &quot;*/&quot; should be ignored. (Here, occurrences happen in reading order: line by line from left to right.) To be clear, the string &quot;/*/&quot; does not yet end the block comment, as the ending would be overlapping the beginning.
+The first effective comment takes precedence over others.
+
+For example, if the string &quot;//&quot; occurs in a block comment, it is ignored.
+Similarly, if the string &quot;/*&quot; occurs in a line or block comment, it is also ignored.
+If a certain line of code is empty after removing comments, you must not output that line: each string in the answer list will be non-empty.
+
+There will be no control characters, single quote, or double quote characters.
+
+For example, source = &quot;string s = &quot;/* Not a comment. */&quot;;&quot; will not be a test case.
+Also, nothing else such as defines or macros will interfere with the comments.
+
+It is guaranteed that every open block comment will eventually be closed, so &quot;/*&quot; outside of a line or block comment always starts a new comment.
+
+Finally, implicit newline characters can be deleted by block comments. Please see the examples below for details.
+
+After removing the comments from the source code, return the source code in the same format.
+
+
+
+Example 1:
+
+Input: source = [&quot;/*Test program */&quot;, &quot;int main()&quot;, &quot;{ &quot;, &quot;  // variable declaration &quot;, &quot;int a, b, c;&quot;, &quot;/* This is a test&quot;, &quot;   multiline  &quot;, &quot;   comment for &quot;, &quot;   testing */&quot;, &quot;a = b + c;&quot;, &quot;}&quot;]
+Output: [&quot;int main()&quot;,&quot;{ &quot;,&quot;  &quot;,&quot;int a, b, c;&quot;,&quot;a = b + c;&quot;,&quot;}&quot;]
+Explanation: The line by line code is visualized as below:
+/*Test program */
+int main()
+{ 
+  // variable declaration 
+int a, b, c;
+/* This is a test
+   multiline  
+   comment for 
+   testing */
+a = b + c;
+}
+The string /* denotes a block comment, including line 1 and lines 6-9. The string // denotes line 4 as comments.
+The line by line output code is visualized as below:
+int main()
+{ 
+
+int a, b, c;
+a = b + c;
+}
+Example 2:
+
+Input: source = [&quot;a/*comment&quot;, &quot;line&quot;, &quot;more_comment*/b&quot;]
+Output: [&quot;ab&quot;]
+Explanation: The original source string is &quot;a/*comment\nline\nmore_comment*/b&quot;, where we have bolded the newline characters.  After deletion, the implicit newline characters are deleted, leaving the string &quot;ab&quot;, which when delimited by newline characters becomes [&quot;ab&quot;].
+
+
+Constraints:
+
+1 &lt;= source.length &lt;= 100
+0 &lt;= source[i].length &lt;= 80
+source[i] consists of printable ASCII characters.
+Every open block comment is eventually closed.
+There are no single-quote or double-quote in the input.
+</code></pre>
+<h2 id="_8">Код:</h2>
+<pre><code class="language-python">class Solution(object):
+    def removeComments(self, source):
+        inBlock = False
+        buffer = []
+        result = []
+        for line in source:
+            i = 0
+            if not inBlock:
+                buffer = []
+            while i &lt; len(line):
+                if not inBlock and i + 1 &lt; len(line) and line[i:i+2] == &quot;/*&quot;:
+                    inBlock = True
+                    i += 1
+                elif inBlock and i + 1 &lt; len(line) and line[i:i+2] == &quot;*/&quot;:
+                    inBlock = False
+                    i += 1
+                elif not inBlock and i + 1 &lt; len(line) and line[i:i+2] == &quot;//&quot;:
+                    break
+                elif not inBlock:
+                    buffer.append(line[i])
+                i += 1
+            if buffer and not inBlock:
+                result.append(&quot;&quot;.join(buffer))
+        return result
+</code></pre>
+<h2 id="_9"><img alt="722" src="../images/722.jpg" /></h2>
+<h1 id="491-non-decreasing-subsequences">Задача 491. Non-decreasing Subsequences</h1>
+<h2 id="_10">Условие:</h2>
+<pre><code>Given an integer array nums, return all the different possible non-decreasing subsequences of the given array with at least two elements. You may return the answer in any order.
+
+
+
+Example 1:
+
+Input: nums = [4,6,7,7]
+Output: [[4,6],[4,6,7],[4,6,7,7],[4,7],[4,7,7],[6,7],[6,7,7],[7,7]]
+Example 2:
+
+Input: nums = [4,4,3,2,1]
+Output: [[4,4]]
+
+
+Constraints:
+
+1 &lt;= nums.length &lt;= 15
+-100 &lt;= nums[i] &lt;= 100
+</code></pre>
+<h2 id="_11">Код:</h2>
+<pre><code class="language-python">class Solution:
+    def findSubsequences(self, nums):
+        result = set()
+        sequence = []
+        self.backtrack(nums, 0, sequence, result)
+        return list(result)
+
+    def backtrack(self, nums, index, sequence, result):
+        if index == len(nums):
+            if len(sequence) &gt;= 2:
+                result.add(tuple(sequence))
+            return
+        if not sequence or sequence[-1] &lt;= nums[index]:
+            sequence.append(nums[index])
+            self.backtrack(nums, index + 1, sequence, result)
+            sequence.pop()
+        self.backtrack(nums, index + 1, sequence, result)
+</code></pre>
+<h2 id="_12"><img alt="491" src="../images/491.jpg" /></h2>
+<h1 id="720-longest-word-in-dictionary">Задача 720. Longest Word in Dictionary</h1>
+<h2 id="_13">Условие:</h2>
+<pre><code>Given an array of strings words representing an English Dictionary, return the longest word in words that can be built one character at a time by other words in words.
+
+If there is more than one possible answer, return the longest word with the smallest lexicographical order. If there is no answer, return the empty string.
+
+Note that the word should be built from left to right with each additional character being added to the end of a previous word. 
+
+
+
+Example 1:
+
+Input: words = [&quot;w&quot;,&quot;wo&quot;,&quot;wor&quot;,&quot;worl&quot;,&quot;world&quot;]
+Output: &quot;world&quot;
+Explanation: The word &quot;world&quot; can be built one character at a time by &quot;w&quot;, &quot;wo&quot;, &quot;wor&quot;, and &quot;worl&quot;.
+Example 2:
+
+Input: words = [&quot;a&quot;,&quot;banana&quot;,&quot;app&quot;,&quot;appl&quot;,&quot;ap&quot;,&quot;apply&quot;,&quot;apple&quot;]
+Output: &quot;apple&quot;
+Explanation: Both &quot;apply&quot; and &quot;apple&quot; can be built from other words in the dictionary. However, &quot;apple&quot; is lexicographically smaller than &quot;apply&quot;.
+
+
+Constraints:
+
+1 &lt;= words.length &lt;= 1000
+1 &lt;= words[i].length &lt;= 30
+words[i] consists of lowercase English letters.
+</code></pre>
+<h2 id="_14">Код:</h2>
+<pre><code class="language-python">class Solution(object):
+    def longestWord(self, words):
+        words.sort()
+        valid_words = {&quot;&quot;}
+        longest = &quot;&quot;
+        for word in words:
+            if word[:-1] in valid_words:
+                valid_words.add(word)
+                if len(word) &gt; len(longest):
+                    longest = word
+        return longest
+</code></pre>
+<h2 id="_15"><img alt="720" src="../images/720.jpg" /></h2>
+<h1 id="718-maximum-length-of-repeated-subarray">Задача 718. Maximum Length of Repeated Subarray</h1>
+<h2 id="_16">Условие:</h2>
+<pre><code>Given two integer arrays nums1 and nums2, return the maximum length of a subarray that appears in both arrays.
+
+
+
+Example 1:
+
+Input: nums1 = [1,2,3,2,1], nums2 = [3,2,1,4,7]
+Output: 3
+Explanation: The repeated subarray with maximum length is [3,2,1].
+Example 2:
+
+Input: nums1 = [0,0,0,0,0], nums2 = [0,0,0,0,0]
+Output: 5
+Explanation: The repeated subarray with maximum length is [0,0,0,0,0].
+
+
+Constraints:
+
+1 &lt;= nums1.length, nums2.length &lt;= 1000
+0 &lt;= nums1[i], nums2[i] &lt;= 100
+</code></pre>
+<h2 id="_17">Код:</h2>
+<pre><code class="language-python">class Solution(object):
+    def findLength(self, nums1, nums2):
+        dp = [[0] * (len(nums2) + 1) for _ in range(len(nums1) + 1)]
+        max_len = 0
+        for i in range(len(nums1) - 1, -1, -1):
+            for j in range(len(nums2) - 1, -1, -1):
+                if nums1[i] == nums2[j]:
+                    dp[i][j] = dp[i + 1][j + 1] + 1
+                    max_len = max(max_len, dp[i][j])
+        return max_len
+</code></pre>
+<h2 id="_18"><img alt="718" src="../images/718.jpg" /></h2>
+<h1 id="771-jewels-and-stones">Задача 771. Jewels and Stones</h1>
+<h2 id="_19">Условие:</h2>
+<pre><code>You're given strings jewels representing the types of stones that are jewels, and stones representing the stones you have. Each character in stones is a type of stone you have. You want to know how many of the stones you have are also jewels.
+
+Letters are case sensitive, so &quot;a&quot; is considered a different type of stone from &quot;A&quot;.
+
+
+
+Example 1:
+
+Input: jewels = &quot;aA&quot;, stones = &quot;aAAbbbb&quot;
+Output: 3
+Example 2:
+
+Input: jewels = &quot;z&quot;, stones = &quot;ZZ&quot;
+Output: 0
+
+
+Constraints:
+
+1 &lt;= jewels.length, stones.length &lt;= 50
+jewels and stones consist of only English letters.
+All the characters of jewels are unique.
+</code></pre>
+<h2 id="_20">Код:</h2>
+<pre><code class="language-python">class Solution:
+    def numJewelsInStones(self, J, S):
+        ans = 0
+        for s in S:
+            for j in J:
+                if j == s:
+                    ans += 1
+                    break
+        return ans
+</code></pre>
+<h2 id="_21"><img alt="771" src="../images/771.jpg" /></h2>
+<h1 id="714-best-time-to-buy-and-sell-stock-with-transaction-fee">Задача 714. Best Time to Buy and Sell Stock with Transaction Fee</h1>
+<h2 id="_22">Условие:</h2>
+<pre><code>You are given an array prices where prices[i] is the price of a given stock on the ith day, and an integer fee representing a transaction fee.
+
+Find the maximum profit you can achieve. You may complete as many transactions as you like, but you need to pay the transaction fee for each transaction.
+
+Note:
+
+You may not engage in multiple transactions simultaneously (i.e., you must sell the stock before you buy again).
+The transaction fee is only charged once for each stock purchase and sale.
+
+
+Example 1:
+
+Input: prices = [1,3,2,8,4,9], fee = 2
+Output: 8
+Explanation: The maximum profit can be achieved by:
+- Buying at prices[0] = 1
+- Selling at prices[3] = 8
+- Buying at prices[4] = 4
+- Selling at prices[5] = 9
+The total profit is ((8 - 1) - 2) + ((9 - 4) - 2) = 8.
+Example 2:
+
+Input: prices = [1,3,7,5,10,3], fee = 3
+Output: 6
+
+
+Constraints:
+
+1 &lt;= prices.length &lt;= 5 * 104
+1 &lt;= prices[i] &lt; 5 * 104
+0 &lt;= fee &lt; 5 * 104
+</code></pre>
+<h2 id="_23">Код:</h2>
+<pre><code class="language-python">class Solution(object):
+    def maxProfit(self, prices, fee):
+        cash, hold = 0, -prices[0]
+        for price in prices:
+            cash = max(cash, hold + price - fee)
+            hold = max(hold, cash - price)
+        return cash
+</code></pre>
+<h2 id="_24"><img alt="714" src="../images/714.jpg" /></h2>
+<h1 id="713-subarray-product-less-than-k">Задача 713. Subarray Product Less Than K</h1>
+<h2 id="_25">Условие:</h2>
+<pre><code>Given an array of integers nums and an integer k, return the number of contiguous subarrays where the product of all the elements in the subarray is strictly less than k.
+
+
+
+Example 1:
+
+Input: nums = [10,5,2,6], k = 100
+Output: 8
+Explanation: The 8 subarrays that have product less than 100 are:
+[10], [5], [2], [6], [10, 5], [5, 2], [2, 6], [5, 2, 6]
+Note that [10, 5, 2] is not included as the product of 100 is not strictly less than k.
+Example 2:
+
+Input: nums = [1,2,3], k = 0
+Output: 0
+
+
+Constraints:
+
+1 &lt;= nums.length &lt;= 3 * 104
+1 &lt;= nums[i] &lt;= 1000
+0 &lt;= k &lt;= 106
+</code></pre>
+<h2 id="_26">Код:</h2>
+<pre><code class="language-python">class Solution(object):
+    def numSubarrayProductLessThanK(self, nums, k):
+        if k &lt;= 1:
+            return 0
+        product = 1
+        count = 0
+        left = 0
+        for right in range(len(nums)):
+            product *= nums[right]
+            while product &gt;= k:
+                product //= nums[left]
+                left += 1
+            count += right - left + 1
+        return count
+</code></pre>
+<h2 id="_27"><img alt="713" src="../images/713.jpg" /></h2>
+<h1 id="443-string-compression">Задача 443. String Compression</h1>
+<h2 id="_28">Условие:</h2>
+<pre><code>Given an array of characters chars, compress it using the following algorithm:
+
+Begin with an empty string s. For each group of consecutive repeating characters in chars:
+
+If the group's length is 1, append the character to s.
+Otherwise, append the character followed by the group's length.
+The compressed string s should not be returned separately, but instead, be stored in the input character array chars. Note that group lengths that are 10 or longer will be split into multiple characters in chars.
+
+After you are done modifying the input array, return the new length of the array.
+
+You must write an algorithm that uses only constant extra space.
+
+
+
+Example 1:
+
+Input: chars = [&quot;a&quot;,&quot;a&quot;,&quot;b&quot;,&quot;b&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;]
+Output: Return 6, and the first 6 characters of the input array should be: [&quot;a&quot;,&quot;2&quot;,&quot;b&quot;,&quot;2&quot;,&quot;c&quot;,&quot;3&quot;]
+Explanation: The groups are &quot;aa&quot;, &quot;bb&quot;, and &quot;ccc&quot;. This compresses to &quot;a2b2c3&quot;.
+Example 2:
+
+Input: chars = [&quot;a&quot;]
+Output: Return 1, and the first character of the input array should be: [&quot;a&quot;]
+Explanation: The only group is &quot;a&quot;, which remains uncompressed since it's a single character.
+Example 3:
+
+Input: chars = [&quot;a&quot;,&quot;b&quot;,&quot;b&quot;,&quot;b&quot;,&quot;b&quot;,&quot;b&quot;,&quot;b&quot;,&quot;b&quot;,&quot;b&quot;,&quot;b&quot;,&quot;b&quot;,&quot;b&quot;,&quot;b&quot;]
+Output: Return 4, and the first 4 characters of the input array should be: [&quot;a&quot;,&quot;b&quot;,&quot;1&quot;,&quot;2&quot;].
+Explanation: The groups are &quot;a&quot; and &quot;bbbbbbbbbbbb&quot;. This compresses to &quot;ab12&quot;.
+
+
+Constraints:
+
+1 &lt;= chars.length &lt;= 2000
+chars[i] is a lowercase English letter, uppercase English letter, digit, or symbol.
+</code></pre>
+<h2 id="_29">Код:</h2>
+<pre><code class="language-python">class Solution:
+    def compress(self, chars):
+        i = 0
+        res = 0
+        while i &lt; len(chars):
+            group_length = 1
+            while (i + group_length &lt; len(chars) and chars[i + group_length] == chars[i]):
+                group_length += 1
+            chars[res] = chars[i]
+            res += 1
+            if group_length &gt; 1:
+                str_repr = str(group_length)
+                chars[res:res+len(str_repr)] = list(str_repr)
+                res += len(str_repr)
+            i += group_length
+        return res
+</code></pre>
+<h2 id="_30"><img alt="443" src="../images/443.jpg" /></h2>
+<h1 id="438-find-all-anagrams-in-a-string">Задача 438. Find All Anagrams in a String</h1>
+<h2 id="_31">Условие:</h2>
+<pre><code>Given two strings s and p, return an array of all the start indices of p's anagrams in s. You may return the answer in any order.
+
+
+
+Example 1:
+
+Input: s = &quot;cbaebabacd&quot;, p = &quot;abc&quot;
+Output: [0,6]
+Explanation:
+The substring with start index = 0 is &quot;cba&quot;, which is an anagram of &quot;abc&quot;.
+The substring with start index = 6 is &quot;bac&quot;, which is an anagram of &quot;abc&quot;.
+Example 2:
+
+Input: s = &quot;abab&quot;, p = &quot;ab&quot;
+Output: [0,1,2]
+Explanation:
+The substring with start index = 0 is &quot;ab&quot;, which is an anagram of &quot;ab&quot;.
+The substring with start index = 1 is &quot;ba&quot;, which is an anagram of &quot;ab&quot;.
+The substring with start index = 2 is &quot;ab&quot;, which is an anagram of &quot;ab&quot;.
+
+
+Constraints:
+
+1 &lt;= s.length, p.length &lt;= 3 * 104
+s and p consist of lowercase English letters.
+</code></pre>
+<h2 id="_32">Код:</h2>
+<pre><code class="language-python">class Solution:
+    def findAnagrams(self, s, p):
+        ns, np = len(s), len(p)
+        if ns &lt; np:
+            return []
+
+        pCount = Counter(p)
+        sCount = Counter()
+
+        output = []
+        for i in range(ns):
+            sCount[s[i]] += 1
+
+            if i &gt;= np:
+                if sCount[s[i - np]] == 1:
+                    del sCount[s[i - np]]
+                else:
+                    sCount[s[i - np]] -= 1
+
+            if pCount == sCount:
+                output.append(i - np + 1)
+
+        return output
+</code></pre>
+<h2 id="_33"><img alt="438" src="../images/438.jpg" /></h2>
+<h1 id="436-find-right-interval">Задача 436. Find Right Interval</h1>
+<h2 id="_34">Условие:</h2>
+<pre><code>You are given an array of intervals, where intervals[i] = [starti, endi] and each starti is unique.
+
+The right interval for an interval i is an interval j such that startj &gt;= endi and startj is minimized. Note that i may equal j.
+
+Return an array of right interval indices for each interval i. If no right interval exists for interval i, then put -1 at index i.
+
+
+
+Example 1:
+
+Input: intervals = [[1,2]]
+Output: [-1]
+Explanation: There is only one interval in the collection, so it outputs -1.
+Example 2:
+
+Input: intervals = [[3,4],[2,3],[1,2]]
+Output: [-1,0,1]
+Explanation: There is no right interval for [3,4].
+The right interval for [2,3] is [3,4] since start0 = 3 is the smallest start that is &gt;= end1 = 3.
+The right interval for [1,2] is [2,3] since start1 = 2 is the smallest start that is &gt;= end2 = 2.
+Example 3:
+
+Input: intervals = [[1,4],[2,3],[3,4]]
+Output: [-1,2,-1]
+Explanation: There is no right interval for [1,4] and [3,4].
+The right interval for [2,3] is [3,4] since start2 = 3 is the smallest start that is &gt;= end1 = 3.
+
+
+Constraints:
+
+1 &lt;= intervals.length &lt;= 2 * 104
+intervals[i].length == 2
+-106 &lt;= starti &lt;= endi &lt;= 106
+The start point of each interval is unique.
+</code></pre>
+<h2 id="_35">Код:</h2>
+<pre><code class="language-python">class Solution:
+    def findRightInterval(self, intervals):
+        endIntervals = intervals[:]
+        hash = {tuple(interval): i for i, interval in enumerate(intervals)}
+        intervals.sort(key=lambda x: x[0])
+        endIntervals.sort(key=lambda x: x[1])
+        j = 0
+        res = [-1] * len(intervals)
+        for i in range(len(endIntervals)):
+            while j &lt; len(intervals) and intervals[j][0] &lt; endIntervals[i][1]:
+                j += 1
+            res[hash[tuple(endIntervals[i])]] = -1 if j == len(intervals) else hash[tuple(intervals[j])]
+        return res
+</code></pre>
+<h2 id="_36"><img alt="436" src="../images/436.jpg" /></h2></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
